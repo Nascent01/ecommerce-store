@@ -21,7 +21,7 @@ trait CommandTrait
     }
 
     /**
-     * Truncate tables and disable/enable foreign key checks.
+     * Truncate tables and disable/enable foreign key checks and disables query log.
      *
      * @param array $tables
      * @return void
@@ -35,6 +35,8 @@ trait CommandTrait
         }
 
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+
+        DB::disableQueryLog();
     }
 
     /**
