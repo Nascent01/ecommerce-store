@@ -10,7 +10,7 @@ use App\Models\AttributeChoice\AttributeChoiceTranslation;
 class AttributeChoiceRepository implements EloquentRepositoryInterface
 {
     /**
-     * Find a product category by ID.
+     * Find attribute choice by ID.
      *
      * @param $id
      * @return Model|null
