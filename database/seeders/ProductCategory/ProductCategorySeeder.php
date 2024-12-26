@@ -6,7 +6,7 @@ use App\Constants\ProductCategory\ProductCategoryConstant;
 use App\Services\ProductCategory\ProductCategoryService;
 use Illuminate\Database\Seeder;
 
-class ProductCategoryPhoneSeeder extends Seeder
+class ProductCategorySeeder extends Seeder
 {
     protected $productCategoryService;
 
@@ -22,7 +22,7 @@ class ProductCategoryPhoneSeeder extends Seeder
     {
         $locales = config('app.locales');
 
-     $productCategory = $this->productCategoryService->create([
+        $productCategory = $this->productCategoryService->create([
             'created_at' => now(),
             'updated_at' => now(),
         ]);
