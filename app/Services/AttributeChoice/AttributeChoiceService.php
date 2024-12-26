@@ -7,7 +7,7 @@ use App\Models\AttributeChoice\AttributeChoiceTranslation;
 use App\Services\BaseServiceInterface;
 use Illuminate\Database\Eloquent\Model;
 
-class AttriubteChoiceService implements BaseServiceInterface
+class AttributeChoiceService implements BaseServiceInterface
 {
 
     public function create(array $attributes): Model
