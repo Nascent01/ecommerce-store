@@ -19,9 +19,4 @@ class AttributeChoiceRepository implements EloquentRepositoryInterface
     {
         return AttributeChoice::find($id);
     }
-
-    public function findByName(string $name): ?Model
-    {
-        return AttributeChoiceTranslation::where('name', $name)->first();
-    }
 }
