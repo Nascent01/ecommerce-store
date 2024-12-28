@@ -69,4 +69,9 @@ class AttributeConstant
         self::TYPE_ATTRIBUTE_BATTERY,
         self::TYPE_ATTRIBUTE_COLORS,
     ];
+
+    public const ATTRIBUTE_SEPERATOR_MAPPING = [
+        self::TYPE_ATTRIBUTE_COLORS => '|',
+        self::TYPE_ATTRIBUTE_INTERNAL_MEMORY => '/',
+    ];
 }
