@@ -22,6 +22,8 @@ class ProductCategoryRepository implements EloquentRepositoryInterface
 
     public function findByName(string $name): ?Model
     {
-        return ProductCategoryTranslation::where('name', $name)->first();
+        return ProductCategory::whereHas('translations', function ($query) use ($name) {
+            $query->where('name', $name);
+        })->first();
     }
 }
