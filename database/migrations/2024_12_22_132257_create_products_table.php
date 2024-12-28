@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('sku')->index();
+            $table->string('color_identifier')->nullable();
+            $table->string('size_identifier')->nullable();
             $table->timestamps();
 
             $table->unique(['sku', 'id']);
